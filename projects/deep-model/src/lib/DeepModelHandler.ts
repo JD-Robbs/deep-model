@@ -40,7 +40,7 @@ export class DeepModelHandler<T> implements ProxyHandler<DeepModel<T>> {
                     this._modelSignal.update(updateFn);
                 };
             }
-            if (propStr.toLowerCase() === 'asReadonly') {
+            if (propStr.toLowerCase() === 'asreadonly') {
                 return this._modelSignal.asReadonly.bind(this._modelSignal);
             }
         }
